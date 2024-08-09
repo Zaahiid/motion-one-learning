@@ -14,8 +14,7 @@ const AnimationTwo = () => {
         animate(info.target, { opacity: 0, scale: 0.5 });
       };
     };
-    const element = document.querySelector("#myElement");
-    const unobserve = inView(element, handleInView);
+    const unobserve = inView('#myElement', handleInView);
 
     // Clean up the observer on component unmount
     return () => {
