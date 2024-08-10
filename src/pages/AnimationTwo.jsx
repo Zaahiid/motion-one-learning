@@ -6,7 +6,7 @@ const AnimationTwo = () => {
     // Define the callback function
     const handleInView = (info) => {
       // Animate the element when it enters the viewport
-      animate(info.target, { opacity: 1, scale: 1 });
+      animate(info.target, { opacity: 1, scale: 1 },{duration: 1});
 
       // Return a function to stop the animation when the element leaves the viewport
       return (leaveInfo) => {
